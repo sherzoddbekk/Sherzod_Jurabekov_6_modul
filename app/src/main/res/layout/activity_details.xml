@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/teal_200"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VISA"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance $3,480"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Holder"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:layout_marginLeft="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dates"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:layout_marginLeft="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="Your card number"
+       android:textColor="@color/black"
+       android:textStyle="bold"
+       android:textSize="20sp"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_number_card_new"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/black"
+        android:layout_height="45dp"
+        android:hint="Enter number"
+        android:background="#7E2196F3"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiration date"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="19sp"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_month_new_card"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#7E2196F3"
+                    android:textColorHint="@color/black"
+                    android:hint="month"/>
+
+                <EditText
+                    android:id="@+id/edt_day_new_card"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#7E2196F3"
+                    android:layout_marginLeft="15dp"
+                    android:textColorHint="@color/black"
+                    android:hint="date"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CVV"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_cvv_new_card"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#7E2196F3"
+                android:hint="Codes"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Card Holder Nmae"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_name_card_new"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/black"
+        android:layout_height="45dp"
+        android:hint="Enter name"
+        android:background="#7E2196F3"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Add New Card"
+        android:id="@+id/btn_new_card"/>
+
+
+
+
+</LinearLayout>
